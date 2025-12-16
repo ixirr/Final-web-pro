@@ -1,0 +1,193 @@
+/* ========== Global Styles ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #CCF0FF;
+  color: #4F706B;
+}
+
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+  color: #4F706B;
+}
+
+/* ========== Header ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #4F706B;
+  color: #FFD98A;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #FFD98A;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #CCF0FF;
+}
+
+/* ========== Button Styles ========== */
+.btn {
+  padding: 15px 30px;
+  border-radius: 35px;
+  font-weight: bold;
+  background-color: #4F706B;
+  color: #FFD98A;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFD98A;
+  color: #4F706B;
+}
+
+/* ========== Cards ========== */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+article {
+  width: 300px;
+  background-color: #CCF0FF;
+  border-radius: 25px;
+  padding: 20px;
+  color: #4F706B;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+article img {
+    width: 50px !important;  
+    height: auto !important;
+    object-fit: cover;
+    display: block;           
+    margin: 0 auto;          
+}
+
+
+article h4 {
+  margin: 20px 0 10px;
+  font-size: 1.3rem;
+}
+
+/* ========== Form Styles ========== */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #4F706B;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ========== Messages ========== */
+.message-box, .form-message {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 2px solid #ef9a9a;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 2px solid #a5d6a7;
+}
+
+/* ========== Password Strength ========== */
+.password-strength {
+  margin: 10px 0;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.strength-bar {
+  height: 10px;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.strength-text {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #4F706B;
+  color: #FFD98A;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section {
+    padding: 40px 20px;
+  }
+}
