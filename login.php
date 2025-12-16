@@ -1,4 +1,4 @@
-/* <?php
+<?php
 include 'config.php';
 
 $error = '';
@@ -59,3 +59,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
