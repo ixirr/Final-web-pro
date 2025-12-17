@@ -6,7 +6,7 @@ $message = '';
 $messageType = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $topic = $topic = trim($_POST['topic']);
+    $topic = trim($_POST['topic']);
     $details = trim($_POST['details']);
     
     if (empty($topic) || empty($details)) {
@@ -54,3 +54,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 <?php include 'includes/footer.php'; ?>
+
