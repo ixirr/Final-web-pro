@@ -6,8 +6,8 @@ $message = '';
 $messageType = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $topic = mysqli_real_escape_string($conn, $_POST['topic']);
-    $details = mysqli_real_escape_string($conn, $_POST['details']);
+    $topic = trim($_POST['topic']);
+    $details = trim($_POST['details']);
     
     if (empty($topic) || empty($details)) {
         $message = "⚠️ Please fill in all required fields.";
